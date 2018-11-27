@@ -1,0 +1,773 @@
+/* NOME: JOGO DE PERGUNTAS E RESPOSTAS
+   Jonathan Willians da Silva Souza RA : 2217102008
+   Kaue Rosa de Souza RA: 2217103406
+   Luiz Felipe da Silva RA: 2217112158
+   3º SEMESTRE - Sistemas de Informação
+             *  UNINOVE CAMPUS SANTO AMARO  *
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+main()
+{
+	char resp,inicio;
+	char cert='s';
+	char nome[40];
+	int medio=0,facil=0,dificil=0,cont=0,nivel;
+	int certo_1=0,errado_1=0,contp_1=1,totp_1=1;
+	int certo_2=0,errado_2=0,contp_2=1,totp_2=1;
+	int certo_3=0,errado_3=0,contp_3=1,totp_3=1;
+	
+	printf ("\nInforme o nome do participante e em seguida pressione \"enter\".\n\n");
+	printf ("\nNOME DO PARTICIPANTE: ");
+	gets(nome);
+	system("cls");
+	printf ("\nSEJA BEM VINDO \"%s\"\n",nome);
+	printf ("-------------------------------------------------------------------------------\n");
+	printf ("Este e um jogo divertido de perguntas e respostas. O jogador devera escolher\n");
+	printf ("dentre as 4 alternativas apenas uma e em seguida pressionar \"enter\".\n\n");
+	printf ("O jogo possui 3 niveis de dificuldade:\n\n");
+	printf ("Nivel facil   - Cada resposta certa valera 2 pontos\n");
+	printf ("Nivel medio   - Cada resposta certa valera 4 pontos\n");
+	printf ("Nivel dificil - Cada resposta certa valera 6 pontos\n");
+	printf ("-------------------------------------------------------------------------------\n");
+	printf ("Boa sorte e bom jogo\n\n");
+	printf ("Pressione \"enter\" para continuar...");
+	getchar();system ("cls");
+	dificuldade:
+	printf ("*-----------------------------*\n");
+	printf ("|    REDES SOCIAIS   |\n");
+	printf ("*-----------------------------*\n");
+	printf ("|  1 - * FACEBOOK *            |\n");
+	printf ("|  2 - * INSTAGRAM *            |\n");
+	printf ("|  3 - * TWITTER *          |\n");
+	printf ("*-----------------------------*\n");
+	printf ("QUAL REDE SOCIAL DESEJA CONHECER ? \n");
+	scanf ("%d",&nivel);
+	system("cls");
+	switch (nivel)
+	{
+		case 1 :
+		{
+			system("cls");
+			time_t tempo;struct tm *data;time(&tempo);
+			data = localtime(&tempo);
+			printf("*=============================================================================*\n");
+			printf("*=============================================================================*\n");
+			printf("*=================================  FACEBOOK   ===============================*\n");
+		    printf("*=============================================================================*\n");
+			printf("*=============================================================================*\n");
+			printf("Facebook e uma midia social e rede social virtual lançada em 4 de fevereiro de 2004 \n");
+			printf("operado e de propriedade privada da Facebook Em 4 de outubro de 2012 \n ");
+            printf("o Facebook atingiu a marca de 1 bilhao de usuarios ativos, sendo por isso a maior rede social\n");
+			printf(" Em 27 de junho de 2016, o Facebook atingiu a marca de 2 bilhoes de usuarios ativos\n" );
+			printf("O nome do serviço decorre o nome coloquial para o livro dado aos alunos no início do ano \n");
+			printf(" letivo por algumas administracoes universitarias nos Estados Unidos para ajudar \n" );
+			printf(" os alunos a conhecerem uns aos outros. O Facebook permite que qualquer usuario que declare \n" );
+			printf("ter pelo menos 13 anos para se tornar usuario registrado do site. \n");
+			printf(" O Facebook foi fundado por Mark Zuckerberg e por seus colegas de quarto da faculdade \n");
+			printf(" A criacao do site foi inicialmente limitada pelos fundadores aos estudantes da Universidade \n");
+			
+
+
+
+
+			printf ("  AS PERGUNSTAS DE NIVEL \"FACIL\" VALEM 2 PONTOS CADA \n");
+			
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - FACEBOOK   |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			/* ESPAÇO PERGUNTA SOBRE FACEBOOK  */ 
+			printf (" Quando surgiu ?  \n");
+			printf ("A) 1990  \n");
+			printf ("B) 2000 \n");
+			printf ("C) 2004 \n");
+			printf ("D) 1985 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"c\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			/* ESPAÇO PERGUNTA SOBRE FACEBOOK  */ 
+			printf (" Qual a maior rede social usada  atuelmente ? \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Youtube  \n");
+			printf ("B) Instagram  \n");
+			printf ("C) Facebook  \n");
+			printf ("D) Twitter  \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"c\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			/* ESPAÇO PERGUNTA SOBRE FACEBOOK  */ 
+			printf (" Dado a pesquisa  feita qual rede social  foi considerada a pior para saude mental dos joves ?  \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Facebook \n");
+			printf ("B) Instagram \n");
+			printf ("C) Whatsapp \n");
+			printf ("D) Twitter  \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			/* ESPAÇO PERGUNTA SOBRE FACEBOOK  */ 
+			printf (" Quando o site  SixDegrees.com  um dos pioneiros  das  redes socias   foi  encerrado ? \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 2001 \n");
+			printf ("B) 2005 \n");
+			printf ("C) 2018 \n");
+			printf ("D) 2003 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf (" DE QUAIS DESSAS EMPRESAS O FACEBOOK TAMBEM E DONO ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Snapchat & amazon  \n");
+			printf ("B) WhatsApp & Pinterest   \n");
+			printf ("C) WhatsApp & Intragram \n");
+			printf ("D) Twitter & Intragram\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf (" QUANTOS ANOS O FACEBOOK TEM ATUALMENTE  ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 12 ANOS \n");
+			printf ("B) 30 ANOS \n");
+			printf ("C) 20 ANOS \n");
+			printf ("D) 14 ANOS \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("       CRIADORES DO FACEBOOK SAO HOMENS OU MULHERES           ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) HOMEM       \n");
+			printf ("B) MULHER   \n");
+			printf ("C) HOMEM E MULHER         \n");
+			printf ("D) NAO SEI     \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Facil  |\n",contp_1++);
+			printf ("*--------------------------------*\n\n");
+			printf ("   O QUE E FACEBBOK E PARA OQUE SERVE ? \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) FACEBOOK E UMA SEGURADORA DE CARROS     \n");
+			printf ("B) FACEBOOK E UMA PLATAFORMA DE CURSO     \n");
+			printf ("C) FACEBOOK E  UMA REDE SOCIAL QUE PERMITE  VOCE CONVERSAR E COMPARTILHAR CONTEUDOS  \n");
+			printf ("D) FACEBOOK E UMA SITE PARA ALUGAR FILMES \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_1++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_1++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_1=contp_1;
+				contp_1=1;
+				goto dificuldade;
+			}
+			break;
+		}  
+		
+		/*Inicio do nível médiio*/
+		
+		case 2:
+		{
+			system("cls");
+			printf("*=============================================================================*\n");
+			printf("*=================================  INSTRAGRAM   ===============================*\n");
+			printf("*=============================================================================*\n");
+			printf ("              AS PERGUNSTAS DE NIVEL \"MEDIO\" VALEM 4 PONTOS CADA\n\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Em que ano o Instagram foi lançado ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 2001 \n");
+			printf ("B) 2009 \n");
+			printf ("C) 2010 \n");
+			printf ("D) 2007 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("Instagram foi criados pela dupla ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Jack Dorsey e Evan Williams  \n");
+			printf ("B) Biz Stone e Noah Glass \n");
+			printf ("C) Mark Zuckerberg e Jan Koum \n");
+			printf ("D) Kevin Systrom e Mike Krieger \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("qual foi a maior concorrente do instagram  ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) Orkut \n");
+			printf ("B) Facebook \n");
+			printf ("C) Snapchat \n");
+			printf ("D) Twitter   \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf (" EM QUE ANO O INSTRAGRAM FOI VENDIDO ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 2004 \n");
+			printf ("B) 2012 \n");
+			printf ("C) 2010 \n");
+			printf ("D) 2006 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf (" QUAIS PLATAFORMAS O INSTRAGRAM PODE RODAR?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) IOS \n");
+			printf ("B) ANDROID \n");
+			printf ("C) WINDOWS PHONE\n");
+			printf ("D) TODAS ESTAO CORRETAS\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf (" INSTRAGAM ESTA DISPONIVEL  EM TODOS OS IDIOMAS \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) VERDADEIRO\n");
+			printf ("B) FALSO\n");
+			printf ("C) NAO SEI\n");
+			printf ("D) SOMENTE INGLES\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("QUAL DOS ITENS ABAIXO NAO E UMA LINGUAGEM DE PROGRAMACAO?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) COBOL\n");
+			printf ("B) BASIC\n");
+			printf ("C) SMALLTALK\n");
+			printf ("D) PREVIEW\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='d')||(resp=='D'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"D\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system("cls");
+			printf ("*--------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Medio  |\n",contp_2++);
+			printf ("*--------------------------------*\n\n");
+			printf ("QUAIS FERRAMENTAS INSTAGRAM OFERECE?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A)  EDITOR DE PHOTOS\n");
+			printf ("B)  FERRAMENTAS DE ENGENHARIA\n");
+			printf ("C)  DE ELETRECISTA \n");
+			printf ("D)  DE DESCONTOS NO SHOOPING \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_2++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_2++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("Deseja jogar em outro nivel (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='s')||(resp=='S'))
+			{
+				system ("cls");
+				totp_2=contp_2;
+				contp_2=1;
+				goto dificuldade;
+			}
+			break;
+		} 
+		
+		/* Inicio do nível difícil */
+		
+		case 3 :
+		{
+			system("CLS");
+			printf("*=============================================================================*\n");
+			printf("*=================================  TWITTER    ===============================*\n");
+			printf("*=============================================================================*\n");
+			printf ("            AS PERGUNSTAS DE NIVEL \"DIFICIL\" VALEM 6 PONTOS CADA\n\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf (" O Twitter foi fundado por quantas pessoas ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 4 \n");
+			printf ("B) 3 \n");
+			printf ("C) 5 \n");
+			printf ("D) 1 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("Qual o número maximo de caracteres que podem ser utilizados em uma postagem do twitter atualmente ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 70 caracteres  \n");
+			printf ("B) 100 caracteres \n");
+			printf ("C) 140 caracteres \n");
+			printf ("D) 90 caracteres \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf (" EM QUE ANO O TWITTER FOI FUNDADO   ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 2006 \n");
+			printf ("B) 2007 \n");
+			printf ("C) 2015 \n");
+			printf ("D) 2010 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='a')||(resp=='A'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf (" QUAL E A COR DO ICONE DO TWITTER ? \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) AMARELO \n");
+			printf ("B) VERDE \n");
+			printf ("C) AZUL \n");
+			printf ("D) ROXO  \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='c')||(resp=='C'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"C\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf (" QUAL E O MASCOTE DO TWITTER  \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A)   MACACO  \n");
+			printf ("B)   PASSARO  \n");
+			printf ("C)   CACHORRO \n");
+			printf ("D)   GATO \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"A\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("COMO E CHAMADA UMA PESSOA QUE ESCREVE COM AS DUAS MAOS?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) DESTRO\n");
+			printf ("B) AMBIDESTRO\n");
+			printf ("C) CANHOTO\n");
+			printf ("D) ADESTRADO\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("*----------------------------------*\n");
+			printf ("|  Pergunta n. %.2d - Nivel Dificil  |\n",contp_3++);
+			printf ("*----------------------------------*\n\n");
+			printf ("  QUANDO O TWITTER CHEGOU NO BRASIL ?\n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("A) 2001 \n");
+			printf ("B) 2006 \n");
+			printf ("C) 2005 \n");
+			printf ("D) 2010 \n");
+			printf ("-------------------------------------------------------------------------------\n");
+			printf ("Qual a resposta certa?\n");
+			scanf ("%s",&resp);
+			if ((resp=='b')||(resp=='B'))
+			{
+				printf ("Resposta correta\n");
+				certo_3++;
+			}
+			else
+			{
+				printf ("Resposta errada\n");
+				printf ("Resposta correta: Letra \"B\"\n");
+				errado_3++;
+			}
+			printf ("-------------------------------------------------------------------------------\n");
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			printf ("As pergunstas deste nivel terminaram.\n");
+			printf ("RESULTADOS (s/n)? ");
+			scanf ("%s",&resp);
+			if ((resp=='n')||(resp=='n'))
+			{
+				system ("cls");
+				totp_3=contp_3;
+				contp_3=1;
+				goto dificuldade;
+			}
+			break;
+		}
+		default : printf ("Nivel invalido\n");
+		{
+			getchar();printf ("Pressione \"enter\" para continuar...");
+			getchar();system ("cls");
+			goto dificuldade;
+		}
+		
+	}/*fechamento do 1º swhith*/
+	
+	system("cls");
+	printf ("================ RESULTADOS DO JOGO =================\n");
+	printf ("Participante: %s\n",nome);
+	printf ("Perguntas respondidas: %d\n",totp_1-1+contp_1-1+totp_2-1+contp_2-1+totp_3-1+contp_3-1);
+	printf ("Total de acertos.....: %d\n",certo_1+certo_2+certo_3);
+	printf ("Total de erros.......: %d\n",errado_1+errado_2+errado_3);
+	printf ("Pontuacao total......: %d\n\n",(certo_1*2)+(certo_2*4)+(certo_3*6));
+	printf ("--------------------- NIVEL FACIL -------------------\n");
+	printf ("Perguntas respondidas: %d\n",contp_1-1+totp_1-1);
+	printf ("Acertos..: %d\n",certo_1);
+	printf ("Erros....: %d\n",errado_1);
+	printf ("Pontuacao: %d\n\n",certo_1*2);
+	printf ("-------------------- NIVEL MEDIO --------------------\n");
+	printf ("Perguntas respondidas: %d\n",contp_2-1+totp_2-1);
+	printf ("Acertos..: %d\n",certo_2);
+	printf ("Erros....: %d\n",errado_2);
+	printf ("Pontuacao: %d\n\n",certo_2*4);
+	printf ("------------------- NIVEL DIFICIL -------------------\n");
+	printf ("Perguntas respondidas: %d\n",contp_3-1+totp_3-1);
+	printf ("Acertos..: %d\n",certo_3);
+	printf ("Erros....: %d\n",errado_3);
+	printf ("Pontuacao: %d\n",certo_3*6);
+	getchar();
+	getchar();
+} 
